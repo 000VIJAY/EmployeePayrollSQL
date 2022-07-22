@@ -14,3 +14,7 @@ Insert into Employee_Payroll
 ('Nitish Kumar' , 50000 , '03-01-2014'),
 ('Md Ayub' , 200000 , '06-04-2019')
 Select * FROM Employee_Payroll;
+SELECT Salary  FROM Employee_Payroll 
+Where name = 'Vijay Kumar';
+SELECT * FROM Employee_Payroll
+Where Start BETWEEN CAST('03-01-2014' AS date) AND ('06-04-2019')
