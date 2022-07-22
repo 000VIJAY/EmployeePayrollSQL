@@ -17,4 +17,8 @@ Select * FROM Employee_Payroll;
 SELECT Salary  FROM Employee_Payroll 
 Where name = 'Vijay Kumar';
 SELECT * FROM Employee_Payroll
-Where Start BETWEEN CAST('03-01-2014' AS date) AND ('06-04-2019')
+Where Start BETWEEN CAST('03-01-2014' AS date) AND ('06-04-2019');
+
+ALTER table Employee_Payroll ADD Gender varchar(6);
+UPDATE Employee_Payroll Set Gender = 'M' where name = 'Vijay Kumar ' or name = 'Nitish Kumar' or name = 'Md Ayub';
+SELECT * FROM Employee_Payroll
