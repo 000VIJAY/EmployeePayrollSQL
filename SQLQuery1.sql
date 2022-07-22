@@ -13,6 +13,7 @@ Insert into Employee_Payroll
 ('Vijay Kumar ', 100000 ,'12-10-2021'),
 ('Nitish Kumar' , 50000 , '03-01-2014'),
 ('Md Ayub' , 200000 , '06-04-2019')
+
 Select * FROM Employee_Payroll;
 SELECT Salary  FROM Employee_Payroll 
 Where name = 'Vijay Kumar';
@@ -21,4 +22,24 @@ Where Start BETWEEN CAST('03-01-2014' AS date) AND ('06-04-2019');
 
 ALTER table Employee_Payroll ADD Gender varchar(6);
 UPDATE Employee_Payroll Set Gender = 'M' where name = 'Vijay Kumar ' or name = 'Nitish Kumar' or name = 'Md Ayub';
-SELECT * FROM Employee_Payroll
+Insert into Employee_Payroll
+(
+	[name] , [Salary] , [start] )Values 
+('Shiwani Gupta ', 150000 ,'12-10-2020');
+UPDATE Employee_Payroll Set Gender = 'F' Where name = 'Shiwani Gupta';
+SELECT * FROM Employee_Payroll;
+SELECT SUM (Salary) FROM Employee_Payroll; 
+SELECT AVG (Salary) FROM Employee_Payroll; 
+SELECT MIN (Salary) FROM Employee_Payroll; 
+SELECT MAX (Salary) FROM Employee_Payroll; 
+SELECT COUNT (Salary) FROM Employee_Payroll;
+SELECT SUM (Salary) FROM Employee_Payroll Where Gender = 'M'; 
+SELECT AVG (Salary) FROM Employee_Payroll Where Gender = 'M'; 
+SELECT MIN (Salary) FROM Employee_Payroll Where Gender = 'M'; 
+SELECT MAX (Salary) FROM Employee_Payroll Where Gender = 'M';  
+SELECT COUNT (Salary) FROM Employee_Payroll Where Gender ='M';
+SELECT SUM (Salary) FROM Employee_Payroll Where Gender = 'F'; 
+SELECT AVG (Salary) FROM Employee_Payroll Where Gender = 'F'; 
+SELECT MIN (Salary) FROM Employee_Payroll Where Gender = 'F'; 
+SELECT MAX (Salary) FROM Employee_Payroll Where Gender = 'F';  
+SELECT COUNT (Salary) FROM Employee_Payroll Where Gender ='F';
