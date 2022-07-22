@@ -7,3 +7,9 @@ create table Employee_Payroll
 	Salary	float NOT NULL ,
 	Start	Date NOT NULL
 );
+Insert into Employee_Payroll
+(
+	[name] , [Salary] , [start] )Values 
+('Vijay Kumar ', 100000 ,'12-10-2021'),
+('Nitish Kumar' , 50000 , '03-01-2014'),
+('Md Ayub' , 200000 , '06-04-2019')
