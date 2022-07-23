@@ -53,6 +53,7 @@ UPDATE Employee_Payroll Set PhoneNumber = 8847283536 , Address = '1-2-3patna' , 
 
 Alter table Employee_Payroll Add BasicPay BIgInt , Deductions BigInt , TaxablePay BigInt ,IncomeTax BigInt ,NetPay BigInt;
 UPDATE Employee_Payroll Set BasicPay = 10000 , Deductions = 500 , TaxablePay = 9500 , IncomeTax = 500 , NetPay = 9000 where name = 'Md Ayub';
+SELECT * FROM Employee_Payroll; 
 Insert into Employee_Payroll
 (
 	[name] , [Salary] , [start] )Values 
