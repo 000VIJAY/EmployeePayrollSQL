@@ -63,4 +63,7 @@ Insert into Employee_Payroll
 (
 	[name] ,[Salary] ,[start] ,[Department] ,[Gender] )Values 
 ('Terissa', 0 ,'12-10-2020' ,'Marketing' , 'F');
+use Employee_Payroll
 SELECT * FROM Employee_Payroll; 
+Update Employee_Payroll Set BasicPay = 0 , Deductions = 0 ,TaxablePay = 0, IncomeTax = 0, NetPay = 0 where Id = 7; 
+Update Employee_Payroll Set PhoneNumber = 0 , Address = 'Not Available' where Id = 7 ;
